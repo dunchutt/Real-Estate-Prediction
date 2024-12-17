@@ -52,6 +52,6 @@ The system predicts real estate prices based on features like location, area, an
 Run the model scripts.
 Provide input features for prediction.
 
-**Results
+## Results
 
 The system demonstrates effective prediction of real estate prices with the given dataset. Results include model accuracy and feature importance analysis.
