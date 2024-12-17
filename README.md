@@ -1,37 +1,52 @@
-# Real Estate Price Prediction
+# Real Estate Price Prediction System
 
-This project implements a **Real Estate Price Prediction System** using machine learning techniques and Python tools.
+This project implements a **Real Estate Price Prediction System** using Machine Learning models in Python. The goal is to predict housing prices based on various features such as location, size, and amenities.
 
 ## Table of Contents
 1. [Overview](#overview)
 2. [Technologies Used](#technologies-used)
-3. [Project Structure](#project-structure)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Results](#results)
-7. [Acknowledgments](#acknowledgments)
+3. [Dataset](#dataset)
+4. [Model Workflow](#model-workflow)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Results](#results)
+8. [Acknowledgments](#acknowledgments)
 
 ---
 
 ## Overview
-The system predicts real estate prices based on features like location, area, and other parameters using machine learning models. The workflow includes data preprocessing, model training, and evaluation.
+The project applies supervised machine learning techniques to predict real estate prices. Preprocessing, model training, and evaluation workflows are implemented efficiently to analyze housing data.
 
 ---
 
 ## Technologies Used
 - **Python 3.x**
-- **Jupyter Notebook** - Development
-- **Pandas** - Data preprocessing
+- **Pandas** - Data manipulation
 - **NumPy** - Numerical operations
-- **Matplotlib/Seaborn** - Data visualization
-- **Scikit-learn** - Machine learning models
+- **Matplotlib/Seaborn** - Visualization
+- **Scikit-Learn** - Data preprocessing and machine learning models
 
 ---
 
-## Project Structure
-- **Client**: Front-end (input and visualization)
-- **Server**: Back-end for model serving
-- **Model**: Contains training and evaluation code
+## Dataset
+The dataset includes real estate property details like:
+- **Location**
+- **Square footage**
+- **Number of bedrooms/bathrooms**
+- **Price**
+
+You can place the dataset in the `data` folder.
+
+---
+
+## Model Workflow
+1. **Data Preprocessing**:
+   - Handling missing values.
+   - Feature scaling and encoding categorical variables.
+2. **Model Training**:
+   - Regression models (Linear Regression, Decision Trees, etc.) are trained and tuned.
+3. **Evaluation**:
+   - RMSE, MAE, and R2 Score metrics are used for performance evaluation.
 
 ---
 
@@ -44,14 +59,22 @@ The system predicts real estate prices based on features like location, area, an
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+
 ## Usage
 
-- **Data Preprocessing**: Clean and prepare real estate datasets.
-- **Model Training**: Train machine learning models with Scikit-learn.
-- **Prediction**:
-Run the model scripts.
-Provide input features for prediction.
+Run the preprocessing and training script:
+python train_model.py
+
+Evaluate the model:
+python evaluate_model.py
+
+Make predictions:
+python predict.py --input path/to/input.csv
 
 ## Results
 
-The system demonstrates effective prediction of real estate prices with the given dataset. Results include model accuracy and feature importance analysis.
+The trained model achieves accurate predictions based on historical data. Metrics like R2 score and RMSE are visualized for evaluation.
+
+## Acknowledgments
+
+Special thanks to the open-source Python community and libraries like Pandas, Scikit-Learn, and Matplotlib.
